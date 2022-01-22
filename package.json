@@ -1,0 +1,73 @@
+{
+  "name": "html-tag-interfaces",
+  "version": "1.0.0",
+  "description": "Map HTML tag names to their interfaces",
+  "type": "module",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepack": "npm run build",
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "format": "prettier --write .",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keplersj/html-tag-interfaces.git"
+  },
+  "keywords": [
+    "html",
+    "tag",
+    "name",
+    "element",
+    "tagname",
+    "interface",
+    "dom",
+    "w3c",
+    "whatwg"
+  ],
+  "author": "Kepler Sticka-Jones <kepler@stickajones.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keplersj/html-tag-interfaces/issues"
+  },
+  "homepage": "https://github.com/keplersj/html-tag-interfaces#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "eslint": "^7.32.0",
+    "eslint-config-starstuff": "^1.5.8",
+    "jest": "^27.4.7",
+    "microbundle": "^0.14.2",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.5"
+  },
+  "jest": {
+    "preset": "ts-jest/presets/default-esm",
+    "collectCoverage": true,
+    "globals": {
+      "ts-jest": {
+        "useESM": true
+      }
+    },
+    "moduleNameMapper": {
+      "^(\\.{1,2}/.*)\\.js$": "$1"
+    }
+  },
+  "eslintConfig": {
+    "extends": "starstuff/auto",
+    "env": {
+      "browser": true
+    }
+  }
+}
