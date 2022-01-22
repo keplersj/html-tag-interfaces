@@ -55,6 +55,7 @@
   "jest": {
     "preset": "ts-jest/presets/default-esm",
     "collectCoverage": true,
+    "testEnvironment": "jsdom",
     "globals": {
       "ts-jest": {
         "useESM": true
