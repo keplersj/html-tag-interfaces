@@ -14,6 +14,7 @@
   "types": "./dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
+    "prepare": "husky install",
     "clean": "rimraf coverage/ dist/",
     "prepack": "npm run clean && npm run build",
     "build": "microbundle",
