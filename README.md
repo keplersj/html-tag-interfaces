@@ -4,6 +4,7 @@
 [![npm](https://img.shields.io/npm/dw/html-tag-interfaces)](https://www.npmjs.com/package/html-tag-interfaces)
 [![Codecov](https://img.shields.io/codecov/c/github/keplersj/html-tag-interfaces)](https://app.codecov.io/gh/keplersj/html-tag-interfaces)
 [![Bundle Size](https://img.shields.io/bundlephobia/min/html-tag-interfaces)](https://bundlephobia.com/package/html-tag-interfaces)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://www.conventionalcommits.org/)
 
 Map HTML tag names to their interfaces.
 
